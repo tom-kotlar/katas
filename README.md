@@ -67,14 +67,14 @@ your-project-root/
 
 - **Jest Configuration:** Set up `jest.config.js` also at the root. Adapt the Jest configuration to work with TypeScript as shown in previous instructions.
 
-# Setting Up Git and Pushing to GitHub ![alt text](octocat.png | width=30x20)
+# Setting Up Git and Pushing to GitHub 🐱
 
 Follow these steps to initialize Git for your project, commit your files, and push them to a new repository on GitHub.
 
 
 ## Initialize Git
 
-```
+```bash
 git init
 ```
 
@@ -82,6 +82,35 @@ git init
 
 Create a `.gitignore` file in your project's root directory to specify intentionally untracked files that Git should ignore.
 
-```
+```bash
 touch .gitignore
 ```
+
+
+
+## Link your local repository to your GitHub repository
+
+```bash
+git add .
+```
+
+### Commit your files:
+```bash
+git commit -m "Initial commit"
+```
+
+### Push your code to GitHub:
+```bash
+git push -u origin main
+```
+
+##  Create a new repository on GitHub:
+
+```bash
+git remote add origin https://github.com/yourusername/your-repository-name.git
+git branch -M main
+git push -u origin main
+```
+
+
+
